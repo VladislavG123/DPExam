@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{621497A6-8AC3-4229-BAF7-4BD509D7B8D0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DPExam</RootNamespace>
-    <AssemblyName>DPExam</AssemblyName>
+    <ProjectGuid>{3ABB0A7E-F6D1-48F1-A978-9FA99CE380D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DPExam.Models</RootNamespace>
+    <AssemblyName>DPExam.Models</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,20 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AudioCard.cs" />
+    <Compile Include="Body.cs" />
+    <Compile Include="Complectation.cs" />
+    <Compile Include="ComputerComplectation.cs" />
+    <Compile Include="Director.cs" />
+    <Compile Include="HDD.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="MainCard.cs" />
+    <Compile Include="Mouse.cs" />
+    <Compile Include="NetworkCard.cs" />
+    <Compile Include="Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="SDD.cs" />
+    <Compile Include="VideoCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DPExam.Models.Abstract\DPExam.Models.Abstract.csproj">
       <Project>{F40C26FC-5C76-4A9A-8F0D-3E0B42C4BE7B}</Project>
       <Name>DPExam.Models.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DPExam.Models\DPExam.Models.csproj">
-      <Project>{3ABB0A7E-F6D1-48F1-A978-9FA99CE380D2}</Project>
-      <Name>DPExam.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
