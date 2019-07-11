@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DPExam.Models
 {
+    // Сервис для добавления компонентов к комплектации
     public class ComputerComplectation : IComputerBuilder
     {
         private Complectation _complectation = new Complectation();
@@ -66,6 +67,7 @@ namespace DPExam.Models
             _complectation.Add("GTX 1050Ti");
         }
 
+        // Метод возвращающий комплектацию
         public Complectation GetComplectation()
         {
             Complectation result = _complectation;

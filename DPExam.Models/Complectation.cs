@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DPExam.Models
 {
+    // Тут происходит добавление к комплектации и вывод всей комплектации
     public class Complectation
     {
         private List<object> _parts = new List<object>();

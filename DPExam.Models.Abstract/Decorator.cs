@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DPExam.Models.Abstract
 {
+    // Абстрактный класс позволяющий "записывать" компоненты к компьютеру
     public abstract class Decorator : Computer
     {
         protected Computer _component;
